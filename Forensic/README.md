@@ -20,7 +20,7 @@ The first byte in each line is a modifyer, which can tell if Shift, Alt, or Ctrl
 Alternate Data Streams (ADS) are a file attribute, only found on the NTFS file system, to store different streams of data, in addition to the default stream which is normally used for a file. When this feature was created, its main purpose was to provide support to the macOS Hierarchical File System (HFS).
 #### Useful commands:
 ```
-echo "Hello, I'm an Alternate Data Stream" > text.txt:invisible.txt
+echo Hello, I'm an Alternate Data Stream > text.txt:invisible.txt
 notepad text.txt:invisible.txt
 Get-Item .\text.txt -Stream *
 Get-Content .\text.txt -Stream:invisible.txt
