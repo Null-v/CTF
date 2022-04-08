@@ -7,7 +7,7 @@ So, you have the pcap file, with some "URB_INTERRUPT in" packets from the source
 the interesting part is the field called "Leftover Capture Data" or "usb.capdata".  
 An useful command to exfiltrate these values is:
 ```
-tshark -r usb_intercept.pcapng -T fileds -e usb.capdata
+tshark -r usb_intercept.pcapng -T fields -e usb.capdata
 ```
 The first byte in each line is a modifyer, which can tell if Shift, Alt, or Ctrl are held while typing the key.  
 #### For example:  
